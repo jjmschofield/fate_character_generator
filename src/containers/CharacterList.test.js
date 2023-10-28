@@ -4,7 +4,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 
-import { createFakeCharacter } from '../test/fakes/character.fake';
+import { createFakeCharacter } from '../test/fakes/character.fake.ts';
 import CharacterList from './CharacterList';
 
 it('renders correctly', () => {
