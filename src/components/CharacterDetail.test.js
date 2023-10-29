@@ -4,7 +4,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { AuthContext } from '../auth/Auth';
-import { createFakeCharacter } from '../test/fakes/character.fake';
+import { createFakeCharacter } from '../models/Character/__test__/character.fake';
 import CharacterDetail from './CharacterDetail';
 
 it('renders a loading message is character is not found', () => {
@@ -16,7 +16,7 @@ it('renders a loading message is character is not found', () => {
       },
     },
     characters: [],
-  }
+  };
 
   // Act
   const result = render(
@@ -38,7 +38,7 @@ it('renders character when a character is found', async () => {
       },
     },
     characters: [createFakeCharacter(1234)],
-  }
+  };
 
   // Act
   const result = render(
